@@ -1,0 +1,53 @@
+{
+  "name": "living-wire",
+  "version": "0.0.1",
+  "description": "Track project progress and get things done!",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "build": "webpack",
+    "pretest": "npm run build",
+    "test": "nyc --instrument false lsc test/start",
+    "posttest": "nyc report -r lcov -r json",
+    "deploy": "npm test && firebase deploy"
+  },
+  "repository": "dk00/living-wire",
+  "license": "Unlicense",
+  "bugs": "https://github.com/dk00/living-wire/issues",
+  "homepage": "https://github.com/dk00/living-wire#readme",
+  "files": [
+    "www",
+    "server.js"
+  ],
+  "dependencies": {
+    "express": "",
+    "web-push": ""
+  },
+  "devDependencies": {
+    "babel-loader": "",
+    "babel-plugin-external-helpers": "",
+    "babel-plugin-istanbul": "",
+    "babel-plugin-transform-component-name": "",
+    "babel-plugin-transform-es2015-modules-commonjs": "",
+    "babel-plugin-transform-inline-environment-variables": "",
+    "babel-plugin-transform-react-jsx": "",
+    "babel-preset-stage-0": "",
+    "babel-minify-webpack-plugin": "",
+    "babel-register": "",
+    "css-loader": "",
+    "file-loader": "",
+    "linking": "next",
+    "livescript": "",
+    "livescript-next": "",
+    "node-sass": "",
+    "nyc": "",
+    "preact": "",
+    "redux": "",
+    "sass-loader": "",
+    "style-loader": "",
+    "tape": "",
+    "webpack": "",
+    "webpack-dev-server": "",
+    "workbox-webpack-plugin": ""
+  },
+  "private": true
+}
